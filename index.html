@@ -16,7 +16,7 @@
 
     <script  type="module">
       async function main(){
-      const response = await fetch("/functions/hello");
+      const response = await fetch("/.netlify/functions/hello");
       if(!response.ok){
       const txt = await response.text();
       console.error(txt);
@@ -24,6 +24,11 @@
       }
       const json = await reponse.json();
       console.info(json);
+      const pre = document.createElement("pre");
+      const code = document.createElement("code");
+      code.innerText = JSON.stringify(json, null, 2);
+      pre.appendChild(code);
+      document.body.appendChild(pre);
       return;
       }
     main().catch(console.error)
