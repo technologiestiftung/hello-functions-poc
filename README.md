@@ -39,12 +39,12 @@ The following configuration is necessary for typescript.
 ```json
 {
 ...
-Compiler options:{
-...
- esModuleInterop :true,
- isolatedModules :true,
-...
-}
+  "compilerOptions":{
+  ...
+    "esModuleInterop" :true,
+    "isolatedModules" :true,
+  ...
+  }
 }
 ```
 
