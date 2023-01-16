@@ -11,7 +11,7 @@
   "author": "ff6347 <hash@ff6347.email>",
   "license": "MIT",
   "devDependencies": {
-    "netlify-cli": "12.5.0",
+    "netlify-cli": "12.7.2",
     "typescript": "4.9.4"
   },
   "dependencies": {
